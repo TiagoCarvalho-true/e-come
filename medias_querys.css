@@ -1,0 +1,50 @@
+@media screen and (max-width:769px) and (max-height:840) {
+    header{
+        display: none;
+        width: auto;
+    }
+        .intro{
+        display: none;
+        width: auto;
+    }
+    .product{
+        display: none;
+        width: auto;
+
+    }
+
+}
+
+
+@media screen and(min-width:1016px) and (max-width:1140px) {
+    header{
+        display: none;
+        width: auto;
+
+    }
+
+        .intro{
+        display: none;
+        width: auto;
+    }
+    .product{
+        display: none;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+    }
+    
+    @media only screen and (min-width:425)(max-width:769px) {
+        header{
+            display: none;
+            width: auto;
+            height: auto;
+        }
+        
+        section .product{
+            padding: 10px 10%;
+            width: 100%;
+        }
+
+        }

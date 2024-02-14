@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="medias_querys.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Minha Loja Online</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="src\assets\img\Iriene.png" alt="logo">
+        </div>
+        <h1>Minha Loja Online</h1>
+    </header>
+     <div class="intro">
+        <h1>Compre nossos salgados pois sao feitos com muito amor.<img src="src\assets\img\gifs-carinha-feliz-0.gif"></h1>
+     </div>
+    <section>
+       
+       
+        <div class="product">
+            <img src="src\assets\img\3.png" alt="img do produto" id="imagem do produto">
+            <h2>Produto 1</h2>
+            <p>Descrição do Produto 1.</p>
+            <p>Preço: R$50,00</p>
+            <button onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product">
+            <img src="src\assets\img\2.png" alt="img do produto" id="imagemDoProduto">
+            <h2>Produto 2</h2>
+            <p>Descrição do Produto 2.</p>
+            <p>Preço: R$40,00</p>
+            <button onclick="addToCart('Produto 2', 40.00)">Adicionar ao Carrinho</button>
+        </div>
+            <div class="product">
+                <img src="src\assets\img\3.png" alt="img do produto" id="imagemDoProduto2">
+                <h2>Produto 3</h2>
+                <p>Descrição do Produto 1.</p>
+                <p>Preço: R$50,00</p>
+                <button onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
+            </div>
+    
+            <div class="product">
+                <img src="src\assets\img\3.png" alt="img do produto" id="imagemDoProduto3">
+                <h2>Produto 4</h2>
+                <p>Descrição do Produto 2.</p>
+                <p>Preço: R$40,00</p>
+                <button onclick="addToCart('Produto 2', 40.00)">Adicionar ao Carrinho</button>
+            </div>
+        
+    </section>
+
+    <section id="cart">
+        <h2>Carrinho de Compras<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+</svg></h2>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="cart-total">R$0,00</span></p>
+        <button onclick="checkout()">Finalizar Compra</button>
+    </section>
+    <footer>
+      <div class="nav-list">
+ <span class="fab fa-instagram">  Nos siga no nosso insta. 2024 TiagocarDev. </span>
+        </div> 
+    </footer>
+
+ <script src="script.js"></script>
+
+</body>
+</html>
